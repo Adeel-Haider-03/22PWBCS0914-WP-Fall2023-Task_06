@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OLSM</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><span>Online Book Management System</span></h1>
+    </header>
+
+    <div class="container">
+        <div class="book-list">
+            <h2><span>Book List</span></h2>
+            <ol id="book-list"></ol>
+        </div>
+        <div class="add-book">
+            <h2><span>Add New Book</span></h2>
+            <input type="text" id="book-title" placeholder="Enter book title" required>
+            <input type="text" id="book-author" placeholder="Enter book author" required>
+            <input type="text" id="ISBN" placeholder="Enter ISBN" required>
+            <button onclick="addBook()">Add Book</button>
+            <button onclick="resetBook()" id="reset-button">Reset List</button>
+        </div>
+        <div class="search-books">
+            <h2><span>Search Books</span></h2>
+            <input type="text" id="search-input" placeholder="Search books...">
+            <button onclick="searchBooks()" id="search-button">Search</button>
+            <button onclick="clear()" id="clear-button">Clear</button>
+            <ul id="search-results"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

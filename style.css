@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Great+Vibes&family=Macondo&family=Metal+Mania&display=swap');
+
+
+
+
+body {
+    font-family: Fjalla One;
+    background-image: url(./1326370.png);
+    
+}
+h1{
+    color: white;
+}
+span{
+    background-color: black;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+.book-list,
+.add-book,
+.search-books {
+    width: 30%;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(245, 222, 179, 0.419);
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border:2px solid red;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #090000;
+    border-radius: 20px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+.container{
+    flex-wrap: wrap;
+}
+
+    .book-list,
+    .add-book,
+    .search-books {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
